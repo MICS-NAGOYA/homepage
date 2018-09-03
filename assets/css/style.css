@@ -13,6 +13,7 @@ html {
 body {
   background: #151515 no-repeat fixed left bottom;
   background-size: cover;
+  background-image: url("../images/Rectangle2.png");
   color: #fff;
   text-align: center;
   font-size: 1.4rem;
