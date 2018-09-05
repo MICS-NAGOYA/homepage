@@ -1,7 +1,6 @@
 /* --------------------------------
  * vars
  * -------------------------------- */
-
 @charset "UTF-8";
 
 /* --------------------------------
@@ -68,7 +67,6 @@ body {
   background-color: rgba(255, 255, 255, 0.15);
 }
 
-
 /* --------------------------------
  * header
  * -------------------------------- */
@@ -104,19 +102,6 @@ body {
 }
 
 /* --------------------------------
- * event
- * -------------------------------- */
-.event {
-  padding: 80px 30px;
-  background-color: transparent;
-  color: #333;
-}
-.event-text {
-  margin: 30px 0;
-  line-height: 2.5;
-}
-
-/* --------------------------------
  * about
  * -------------------------------- */
 .about {
@@ -129,106 +114,24 @@ body {
   line-height: 2.5;
 }
 
-
 /* --------------------------------
- * works
+ * importants
  * -------------------------------- */
-.works {
-  padding: 80px 0;
-  background-color: #383634;
-}
-.works-wrapper {
-  display: table;
-  width: 100%;
-  margin-top: 60px;
-  table-layout: fixed;
-}
-.work-box {
-  position: relative;
-  display: table-cell;
-}
-.work-image {
-  display: block;
-  width: 100%;
-  margin: 0 0 60%;
-}
-.work-description {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  z-index: 1;
-  width: 100%;
-  height: 50%;
-  overflow-y: auto;
-}
-.work-description-inner {
-  display: table;
-  width: 100%;
-  height: 100%;
-  padding: 20px;
-}
-.work-text {
-  display: table-cell;
-  vertical-align: middle;
-  font-size: 1.2rem;
-  line-height: 2;
-}
-.work-text .button {
-  width: 60%;
-  margin-top: 20px;
-  padding: 3px;
-}
-.work-box::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  height: 50%;
-  background: no-repeat;
-  background-size: 100% 100%;
-  opacity: 0.2;
-  transform: scaleY(-1);
-}
-.work-box.tree::after {
-  background-image: url('../images/mics_logo.png')
-}
-.work-box.building::after {
-  background-image: url('../images/mics_logo.png')
-}
-.work-box.lake::after {
-  background-image: url('../images/mics_logo.png')
-}
-.work-box.sky::after {
-  background-image: url('../images/mics_logo.png')
-}
-.work-box:nth-child(odd) .work-image {
-  margin: 60% 0 0;
-}
-.work-box:nth-child(odd) .work-description,
-.work-box:nth-child(odd)::after {
-  top: 0;
-}
-
-
-/* --------------------------------
- * skills
- * -------------------------------- */
-.skills {
+.importants {
   padding: 80px 0;
   background-color: #fff;
   color: #333;
 }
-.skills-wrapper {
+.importants-wrapper {
   display: table;
   width: 80%;
   margin: 50px auto 0;
   table-layout: fixed;
 }
-.skill-box {
+.important-box {
   display: table-cell;
 }
-.skill-icon {
+.important-icon {
   width: 150px;
   height: 150px;
   margin-bottom: 30px;
@@ -238,60 +141,14 @@ body {
   font-size: 8rem;
   line-height: 142px;
 }
-.skill-title {
+.important-title {
   margin: 0 20px 20px;
   font-size: 2rem;
 }
-.skill-text {
+.important-text {
   margin: 0 20px;
   line-height: 2;
 }
-
-
-/* --------------------------------
- * contact
- * -------------------------------- */
-.contact {
-  padding: 80px 0 150px;
-}
-.contact-form {
-  width: 50%;
-  margin: 50px auto 0;
-}
-.contact-form input[type=text],
-.contact-form textarea {
-  display: block;
-  width: 100%;
-  margin-bottom: 10px;
-  padding: 15px;
-  outline: none;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  border-radius: 0;
-  background-color: rgba(255, 255, 255, 0.05);
-  color: #fff;
-}
-.contact-form input[type=text]:focus,
-.contact-form textarea:focus {
-  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5) inset;
-}
-.contact-form textarea {
-  height: 150px;
-}
-.contact-form input[type=submit] {
-  display: block;
-  width: 200px;
-  margin: 40px auto 0;
-  padding: 15px;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  border-radius: 5px;
-  background-color: transparent;
-  color: rgba(255, 255, 255, 0.6);
-  cursor: pointer;
-}
-.contact-form input[type=submit]:hover {
-  background-color: rgba(255, 255, 255, 0.05);
-}
-
 
 /* --------------------------------
  * footer
@@ -300,7 +157,6 @@ body {
   padding: 12px 0;
   font-size: 1.3rem;
 }
-
 
 /* --------------------------------
  * smart phone
@@ -345,88 +201,21 @@ body {
     line-height: 1.8;
   }
 
-  /* --- works --- */
-  .works-wrapper,
-  .work-box {
+  /* --- importants --- */
+  .importants-wrapper,
+  .important-box {
     display: block;
   }
-  .work-image {
-    display: none;
-  }
-  .work-description {
-    position: relative;
-  }
-  .work-box::after {
-    top: 0;
-    height: 100%;
-    background-size: cover;
-  }
-
-  /* --- skills --- */
-  .skills-wrapper,
-  .skill-box {
-    display: block;
-  }
-  .skill-box {
+  .important-box {
     margin: 40px auto;
   }
-  .skill-icon {
+  .important-icon {
     width: 100px;
     height: 100px;
     font-size: 5rem;
     line-height: 92px;
   }
-  .skill-text {
+  .important-text {
     margin: 0;
   }
-
-  /* --- contact --- */
-  .contact {
-    padding-bottom: 80px;
-  }
-  .contact-form {
-    width: 80%;
-  }
 }
-
-
-/* --------------------------------
- * challenge
- *
- * 31行目からの.heading::before, .heading::afterの
- * スタイルをコメントアウトしてから適用してください。
- * -------------------------------- */
-/*
-.heading::before,
-.heading::after {
-  content: '';
-  display: inline-block;
-  width: 0.3em;
-  height: 0.3em;
-  margin: 0 0.5em;
-  border: 1px solid;
-  vertical-align: 0.2em;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-.work-box {
-  overflow: hidden;
-}
-.work-image {
-  transition: -webkit-transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out;
-}
-.work-box:nth-child(odd) .work-image {
-  -webkit-transform-origin: top center;
-  transform-origin: top center;
-}
-.work-box:nth-child(even) .work-image {
-  -webkit-transform-origin: bottom center;
-  transform-origin: bottom center;
-}
-.work-box:hover .work-image {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-*/
